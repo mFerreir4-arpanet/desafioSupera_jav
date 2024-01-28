@@ -1,0 +1,56 @@
+
+package desafio01.pkg01;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Scanner;
+
+
+public class desafio01 {
+
+    public static void main(String[] args) {
+        
+      Scanner sc = new Scanner(System.in);
+      
+      System.out.println("Digite valores inteiros não negativo:");
+      int n = sc.nextInt();
+        sc.nextLine();  
+      
+      do{
+        ArrayList<Integer> impares = new ArrayList<>();
+        ArrayList<Integer> pares = new ArrayList<>();
+      
+        for (int i = 0; i < n; i++) {
+            int valor = sc.nextInt();
+            if(valor<0){
+                System.out.println("Valor inválido!! ");
+                System.exit(1);
+            }
+            if (valor % 2 == 0) {
+                pares.add(valor);
+            } else {
+                impares.add(valor);
+            }
+        }   
+        Collections.sort(pares); 
+        Collections.sort(impares, Comparator.reverseOrder());
+        
+        System.out.println("Valores: ");
+       
+        for (int par : pares) {
+            System.out.println(par);
+        }
+        for (int impar : impares) {
+            System.out.println(impar);
+            
+            sc.close();
+            
+        }
+      }while(n>0);{      
+        System.out.println("Numero inválido");
+        
+    }     
+    }
+         
+    }
