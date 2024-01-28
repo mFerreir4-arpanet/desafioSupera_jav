@@ -1,0 +1,72 @@
+
+package desafio02.pkg2;
+
+import java.util.Scanner;
+
+
+public class desafio02 {
+
+  
+    public static void main(String[] args) {
+     
+        Scanner sc= new Scanner(System.in);
+        
+        System.out.println("Digite um valor: ");
+        Double valor= sc.nextDouble();
+        System.out.println("--------------------");
+        
+        int cents=(int) (valor*100);
+        
+        int nt100=cents/10000;
+         cents%=10000;
+        
+        int nt50=cents/5000;
+        cents%=5000;
+        
+        int nt20=cents/2000;
+        cents%=2000;
+        
+        int nt10=cents/1000;
+        cents%=1000;
+        
+        int nt5=cents/500;
+        cents%=500;
+        
+        int nt2=cents/200;
+        cents%=200;
+        
+        int m100=cents/100;
+       cents%=100;
+       
+       int m50=cents/50;
+       cents%=50;
+       
+       int m25=cents/25;
+       cents%=25;
+       
+       int m10=cents/10;
+       cents%=10;
+       
+        var m5= cents/5;
+       cents%=5;
+       
+       int m1=cents;
+   
+        System.out.println("NOTAS: ");
+         System.out.println(nt100+" notas(s) "+" de "+" R$ "+" 100.00 ");
+         System.out.println(nt50+" notas(s) "+" de "+" R$ "+" 50.00 ");
+         System.out.println(nt20+" notas(s) "+" de "+" R$ "+" 20.00 ");
+         System.out.println(nt10+" notas(s) "+" de "+" R$ "+" 10.00 ");
+         System.out.println(nt5+" notas(s) "+" de "+" R$ "+" 5.00 ");
+         System.out.println(nt2+" notas(s) "+" de "+" R$ "+" 2.00 ");
+          System.out.println("MOEDAS: ");
+           System.out.println(m100+" notas(s) "+" de "+" R$ "+" 1.00 ");
+            System.out.println(m50+" notas(s) "+" de "+" R$ "+" 0.50 ");
+             System.out.println(m25+" notas(s) "+" de "+" R$ "+" 0.25 ");
+              System.out.println(m10+" notas(s) "+" de "+" R$ "+" 0.10 ");
+               System.out.println(m5+" notas(s) "+" de "+" R$ "+" 0.05 ");
+                System.out.println(m1+" notas(s) "+" de "+" R$ "+" 0.01 ");
+        
+    }
+    
+}
