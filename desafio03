@@ -1,0 +1,41 @@
+
+package desafio03.pkg3;
+
+import java.util.Arrays;
+
+
+public class desafio03 {
+
+    
+    public static void main(String[] args) {
+        // Exemplo de valores
+        int n = 5;
+        int k = 2;
+        int[] arr = {1, 5, 3, 4, 2};
+
+        // Chama a função para contar os pares com diferença igual a k
+        int resultado = contarParesDiferencaAlvo(arr, k);
+
+        // Imprime o resultado
+        System.out.println("Número de pares com diferença igual a " + k + ": " + resultado);
+    }
+
+    // Função para contar pares com diferença igual a k
+    private static int contarParesDiferencaAlvo(int[] arr, int k) {
+        Arrays.sort(arr); // Ordena o array para facilitar a busca
+        int contadorPares = 0;
+
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] - arr[i] == k) {
+                    contadorPares++;
+                } else if (arr[j] - arr[i] > k) {
+                    // Como o array está ordenado, se a diferença for maior que k, podemos sair do loop interno
+                    break;
+                }
+            }
+        }
+
+        return contadorPares;
+    }
+}
