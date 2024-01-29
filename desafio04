@@ -1,10 +1,10 @@
 
-package workspace_10.pkg04;
+package desafio04.pkg04;
 
 import java.util.Scanner;
 
 
-public class WorkSpace_1004 {
+public class Desafio04 {
 
    
 public static void main(String[] args) {
