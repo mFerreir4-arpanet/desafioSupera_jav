@@ -4,7 +4,7 @@ package desafio03.pkg3;
 import java.util.Arrays;
 
 
-public class desafio03 {
+public class Desafio03 {
 
     
     public static void main(String[] args) {
