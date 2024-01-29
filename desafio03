@@ -9,11 +9,11 @@ public class Desafio03 {
         int n = 5;
         int k = 2;
         int[] arr = {1, 5, 3, 4, 2};
-        int resultado = contarParesDiferencaAlvo(arr, k);
-        System.out.println("Número de pares com diferença igual a " + k + ": " + resultado);
+        int resultado = contaPar(arr, k);
+        System.out.println("Diferença de pares igual a " + k + ": " + resultado);
     }
     private static int contarParesDiferencaAlvo(int[] arr, int k) {
-        Arrays.sort(arr); // Ordena o array para facilitar a busca
+        Arrays.sort(arr); 
         int contadorPares = 0;
 
         for (int i = 0; i < arr.length - 1; i++) {
