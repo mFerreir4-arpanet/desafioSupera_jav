@@ -8,13 +8,11 @@ public class WorkSpace_1004 {
 
    
 public static void main(String[] args) {
-    // Leitura do número de casos de teste
     try (Scanner scanner = new Scanner(System.in)) {
-        // Leitura do número de casos de teste
         int N = scanner.nextInt();
         scanner.nextLine(); // Consumir a quebra de linha
 
-        // Processamento de cada caso de teste
+       
         for (int i = 0; i < N; i++) {
             String linha = scanner.nextLine();
             String linhaDecifrada = decifrarLinha(linha);
@@ -22,18 +20,13 @@ public static void main(String[] args) {
         }
     }
     }
-
-    // Função para decifrar uma linha
     private static String decifrarLinha(String linha) {
         int comprimento = linha.length();
         StringBuilder linhaDecifrada = new StringBuilder();
 
-        // Decifra a metade esquerda da linha
         for (int i = comprimento / 2 - 1; i >= 0; i--) {
             linhaDecifrada.append(linha.charAt(i));
         }
-
-        // Decifra a metade direita da linha
         for (int i = comprimento - 1; i >= comprimento / 2; i--) {
             linhaDecifrada.append(linha.charAt(i));
         }
