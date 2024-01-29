@@ -4,7 +4,7 @@ package desafio02.pkg2;
 import java.util.Scanner;
 
 
-public class desafio02 {
+public class Desafio02 {
 
   
     public static void main(String[] args) {
