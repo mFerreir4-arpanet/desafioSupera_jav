@@ -8,9 +8,9 @@ public class Desafio02 {
 
   
     public static void main(String[] args) {
-     
         Scanner sc= new Scanner(System.in);
-        
+        Locale.setDefault(Locale.US);
+
         System.out.println("Digite um valor: ");
         Double valor= sc.nextDouble();
         System.out.println("--------------------");
