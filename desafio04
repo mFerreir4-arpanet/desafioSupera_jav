@@ -16,7 +16,7 @@ public static void main(String[] args) {
         for (int i = 0; i < N; i++) {
             String linha = sc.nextLine();
             String linhaDecifrada = decifrarLinha(linha);
-            System.out.println(+linhaDecifrada);
+            System.out.println(linhaDecifrada);
         }
     }
     }
